@@ -332,18 +332,18 @@
         </div>
         <!-- ticket book layout container  -->
         <div
-          class="bg-white flex justify-between gap-14 p-8 rounded-xl mt-8 md:mt-10 lg:mt-12 bg-[url(images/info-devider.png)] bg-no-repeat xl:bg-[1140px_0px] xl:bg-[length:80px_424px]"
+          class="bg-white flex flex-col md:flex-row justify-center items-center md:justify-between gap-14 p-8 rounded-xl mt-8 md:mt-10 lg:mt-12 md:bg-[url(images/info-devider.png)] bg-no-repeat md:bg-[420px_0px] md:bg-[length:80px_655px] lg:bg-[655px_0px] lg:bg-[length:70px_452px] xl:bg-[900px_0px] 2xl:bg-[1140px_0px] xl:bg-[length:80px_424px]"
         >
           <!-- part:route layout -->
           <div class="w-full">
             <!-- ticket book  header  -->
-            <div class="flex justify-between gap-8">
+            <div class="flex flex-col lg:flex-row justify-between gap-8">
               <!-- ticket header  -->
               <div class="flex gap-5">
                 <div><img src="images/bus-logo.png" alt="bus logo" /></div>
                 <div>
                   <h3
-                    class="text-xl md:text-2xl :text-3xl text-[#030712] font-raleway font-bold"
+                    class="text-lg md:text-xl lg:text-2xl xl:text-3xl text-[#030712] font-raleway font-bold"
                   >
                     Greenline Paribahan
                   </h3>
@@ -352,10 +352,10 @@
                   </p>
                 </div>
               </div>
-              <div class="bg-[#1DD10026] flex gap-3 p-4 rounded-xl">
+              <div class="bg-[#1DD10026] flex gap-3 p-3 lg:p-4 rounded-xl">
                 <img src="images/seat-gray.png" alt="gray seat" />
                 <p
-                  class="text-[#1DD100] text-base md:text-lg font-inter font-medium"
+                  class="text-[#1DD100] text-sm md:text-base lg:text-lg font-inter font-medium"
                 >
                   <span>40</span> Seats left
                 </p>
@@ -366,15 +366,15 @@
               <div class="space-y-6">
                 <!-- route  -->
                 <label
-                  class="input input-bordered bg-[#F7F8F8] border-0 border-b-2 border-dotted flex items-center gap-2"
+                  class="input input-bordered bg-[#F7F8F8] border-0 border-b-2 border-dotted flex items-center gap-2 w-full"
                 >
                   <input
                     type="text"
-                    class="grow text-[#03071299] text-lg font-raleway font-semibold"
+                    class="grow text-[#03071299] text-base lg:text-lg font-raleway font-semibold"
                     placeholder="Route"
                   />
                   <span
-                    class="text-[#030712] text-lg font-raleway font-semibold"
+                    class="text-[#030712] text-right lg:text-left text-sm lg:text-lg font-raleway font-semibold hidden md:block"
                     >Dhaka - Sylhet</span
                   >
                 </label>
@@ -384,34 +384,39 @@
                 >
                   <input
                     type="text"
-                    class="grow text-[#03071299] text-lg font-raleway font-semibold"
+                    class="grow text-[#03071299] text-base lg:text-lg font-raleway font-semibold hidden md:block"
                     placeholder="Departure Time"
                   />
+                  <input
+                    type="text"
+                    class="grow text-[#03071299] text-base lg:text-lg font-raleway font-semibold md:hidden"
+                    placeholder="Time"
+                  />
                   <span
-                    class="text-[#030712] text-lg font-raleway font-semibold"
+                    class="text-[#030712] text-sm lg:text-lg font-raleway font-semibold hidden md:block"
                     >9:00 am</span
                   >
                 </label>
               </div>
               <!-- route info field -->
-              <div class="flex justify-between gap-6 mt-6">
-                <div class="bg-[#0307120D] p-4 rounded-xl">
+              <div class="flex flex-col lg:flex-row justify-between gap-6 mt-6">
+                <div class="bg-[#0307120D] p-2.5 md:p-4 rounded-xl">
                   <p
-                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                    class="text-[#030712CC] text-sm md:text-base lg:text-lg font-inter font-medium"
                   >
                     Boarding Point - Laxmipur
                   </p>
                 </div>
-                <div class="bg-[#0307120D] p-4 rounded-xl">
+                <div class="bg-[#0307120D] p-2.5 md:p-4 rounded-xl">
                   <p
-                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                    class="text-[#030712CC] text-sm md:text-base lg:text-lg font-inter font-medium"
                   >
                     Dropping Point - Bogura
                   </p>
                 </div>
-                <div class="bg-[#0307120D] p-4 rounded-xl">
+                <div class="bg-[#0307120D] p-2.5 md:p-4 rounded-xl">
                   <p
-                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                    class="text-[#030712CC] text-sm md:text-base lg:text-lg font-inter font-medium"
                   >
                     Est. Time - 11 Hour
                   </p>
@@ -425,11 +430,13 @@
               <div class="flex justify-center items-center mb-4">
                 <img src="images/fare.png" alt="" />
               </div>
-              <h5 class="text-[#030712] text-3xl font-raleway font-bold">
+              <h5
+                class="text-[#030712] text-2xl lg:text-3xl font-raleway font-bold"
+              >
                 550 taka
               </h5>
               <p
-                class="text-[#03071299] text-xl font-raleway font-semibold mt-3"
+                class="text-[#03071299] text-lg lg:text-xl font-raleway font-semibold mt-3"
               >
                 Per Seat
               </p>
