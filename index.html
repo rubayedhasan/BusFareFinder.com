@@ -313,7 +313,7 @@
       <!-- ticket purchase layout  -->
       <section
         id="ticket-purchase-layout"
-        class="mt-16 md:mt-20 lg:mt-24 bg-[#F7F8F8] px-8 py-16 md:py-20 lg:py-24 border-t-2 border-[#1DD100] rounded-t-[90px] md:rounded-t-[200px] lg:rounded-t-full"
+        class="mt-16 md:mt-20 lg:mt-24 bg-[#F7F8F8] px-8 py-16 md:py-20 lg:py-24 border-t-2 border-[#1DD100] rounded-t-[90px] md:rounded-t-[200px] lg:rounded-t-[260px]"
       >
         <!-- section intro container -->
         <div>
@@ -329,6 +329,98 @@
             real-time bus availability, seat pricing, and total passenger cost
             calculations for transparent and convenient travel planning.
           </p>
+        </div>
+        <!-- ticket book layout container  -->
+        <div
+          class="bg-white flex justify-between gap-14 p-8 rounded-xl mt-8 md:mt-10 lg:mt-12"
+        >
+          <!-- part:route layout -->
+          <div class="w-2/3">
+            <!-- ticket book  header  -->
+            <div class="flex justify-between gap-8">
+              <!-- ticket header  -->
+              <div class="flex gap-5">
+                <div><img src="images/bus-logo.png" alt="bus logo" /></div>
+                <div>
+                  <h3
+                    class="text-xl md:text-2xl :text-3xl text-[#030712] font-raleway font-bold"
+                  >
+                    Greenline Paribahan
+                  </h3>
+                  <p class="text-base text-[#03071299] font-inter font-normal">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+              </div>
+              <div class="bg-[#1DD10026] flex gap-3 p-4 rounded-xl">
+                <img src="images/seat-gray.png" alt="gray seat" />
+                <p
+                  class="text-[#1DD100] text-base md:text-lg font-inter font-medium"
+                >
+                  <span>40</span> Seats left
+                </p>
+              </div>
+            </div>
+            <!-- destination inout field  -->
+            <div class="mt-8 bg-[#F7F8F8] p-8 rounded-lg">
+              <div class="space-y-6">
+                <!-- route  -->
+                <label
+                  class="input input-bordered bg-[#F7F8F8] border-0 border-b-2 border-dotted flex items-center gap-2"
+                >
+                  <input
+                    type="text"
+                    class="grow text-[#03071299] text-lg font-raleway font-semibold"
+                    placeholder="Route"
+                  />
+                  <span
+                    class="text-[#030712] text-lg font-raleway font-semibold"
+                    >Dhaka - Sylhet</span
+                  >
+                </label>
+                <!-- destination  -->
+                <label
+                  class="input input-bordered bg-[#F7F8F8] border-0 border-b-2 border-dotted flex items-center gap-2"
+                >
+                  <input
+                    type="text"
+                    class="grow text-[#03071299] text-lg font-raleway font-semibold"
+                    placeholder="Departure Time"
+                  />
+                  <span
+                    class="text-[#030712] text-lg font-raleway font-semibold"
+                    >9:00 am</span
+                  >
+                </label>
+              </div>
+              <!-- route info field -->
+              <div class="flex justify-between gap-6 mt-6">
+                <div class="bg-[#0307120D] p-4 rounded-xl">
+                  <p
+                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                  >
+                    Boarding Point - Laxmipur
+                  </p>
+                </div>
+                <div class="bg-[#0307120D] p-4 rounded-xl">
+                  <p
+                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                  >
+                    Dropping Point - Bogura
+                  </p>
+                </div>
+                <div class="bg-[#0307120D] p-4 rounded-xl">
+                  <p
+                    class="text-[#030712CC] text-base md:text-lg font-inter font-medium"
+                  >
+                    Est. Time - 11 Hour
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- part:pice layout -->
+          <div class="bg-amber-300 w-1/5">price</div>
         </div>
       </section>
     </main>
