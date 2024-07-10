@@ -14,3 +14,25 @@
 body {
   box-sizing: border-box;
 }
+
+#display-selected-seats div {
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
+}
+#display-selected-seats div p {
+  width: 25%;
+  color: #030712;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+#display-selected-seats div p:nth-child(1) {
+  text-align: left;
+}
+#display-selected-seats div p:nth-child(2) {
+  text-align: center;
+}
+#display-selected-seats div p:nth-child(3) {
+  text-align: right;
+}
