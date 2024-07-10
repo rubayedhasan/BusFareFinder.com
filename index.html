@@ -313,7 +313,7 @@
       <!-- ticket purchase layout  -->
       <section
         id="ticket-purchase-layout"
-        class="mt-16 md:mt-20 lg:mt-24 bg-[#F7F8F8] px-8 py-16 md:py-20 lg:py-24 border-t-2 border-[#1DD100] rounded-t-[90px] md:rounded-t-[200px] lg:rounded-t-[260px]"
+        class="mt-16 md:mt-20 lg:mt-24 bg-[#F7F8F8] px-4 md:px-8 py-12 md:py-20 lg:py-24 border-t-2 border-[#1DD100] rounded-t-[90px] md:rounded-t-[200px] lg:rounded-t-[260px]"
       >
         <!-- section intro container -->
         <div>
@@ -332,14 +332,14 @@
         </div>
         <!-- ticket book layout container  -->
         <div
-          class="bg-white flex flex-col md:flex-row justify-center items-center md:justify-between gap-14 p-8 rounded-xl mt-8 md:mt-10 lg:mt-12 md:bg-[url(images/info-devider.png)] bg-no-repeat md:bg-[420px_0px] md:bg-[length:80px_655px] lg:bg-[655px_0px] lg:bg-[length:70px_452px] xl:bg-[900px_0px] 2xl:bg-[1140px_0px] xl:bg-[length:80px_424px]"
+          class="bg-white flex flex-col md:flex-row justify-center items-center md:justify-between gap-8 md:gap-14 p-4 md:p-8 rounded-xl mt-8 md:mt-10 lg:mt-12 md:bg-[url(images/info-devider.png)] bg-no-repeat md:bg-[420px_0px] md:bg-[length:80px_655px] lg:bg-[655px_0px] lg:bg-[length:70px_452px] xl:bg-[900px_0px] 2xl:bg-[1140px_0px] xl:bg-[length:80px_424px]"
         >
           <!-- part:route layout -->
           <div class="w-full">
             <!-- ticket book  header  -->
             <div class="flex flex-col lg:flex-row justify-between gap-8">
               <!-- ticket header  -->
-              <div class="flex gap-5">
+              <div class="flex flex-col md:flex-row gap-5">
                 <div><img src="images/bus-logo.png" alt="bus logo" /></div>
                 <div>
                   <h3
@@ -362,7 +362,7 @@
               </div>
             </div>
             <!-- destination inout field  -->
-            <div class="mt-8 bg-[#F7F8F8] p-8 rounded-lg">
+            <div class="mt-8 bg-[#F7F8F8] p-4 md:p-8 rounded-lg">
               <div class="space-y-6">
                 <!-- route  -->
                 <label
@@ -445,7 +445,7 @@
         </div>
         <!-- bus seats layout  -->
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 mt-6 bg-white p-8 rounded-xl"
+          class="grid grid-cols-1 lg:grid-cols-2 mt-6 bg-white p-4 md:p-8 rounded-xl"
         >
           <!-- bus seats block  -->
           <div
@@ -456,8 +456,9 @@
             >
               Select Your Seat
             </h3>
+            <!--booked & remain seats indicator block  -->
             <div
-              class="flex justify-between items-center mt-5 pb-6 border-b-2 border-dashed border-[#03071233] font-inter font-medium text-base md:text-lg"
+              class="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center mt-5 pb-6 border-b-2 border-dashed border-[#03071233] font-inter font-medium text-base md:text-lg"
             >
               <!-- Available seat block  -->
               <div class="flex justify-center items-center gap-3">
@@ -487,9 +488,9 @@
             <!-- seats container  -->
             <div>
               <!-- 1st row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -520,9 +521,9 @@
                 </button>
               </div>
               <!-- 2nd row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -553,9 +554,9 @@
                 </button>
               </div>
               <!-- 3rd row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -586,9 +587,9 @@
                 </button>
               </div>
               <!-- 4th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -619,9 +620,9 @@
                 </button>
               </div>
               <!-- 5th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -652,9 +653,9 @@
                 </button>
               </div>
               <!-- 6th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -685,9 +686,9 @@
                 </button>
               </div>
               <!-- 7th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -718,9 +719,9 @@
                 </button>
               </div>
               <!-- 8th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -751,9 +752,9 @@
                 </button>
               </div>
               <!-- 9th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -784,9 +785,9 @@
                 </button>
               </div>
               <!-- 10th row  -->
-              <div class="grid grid-cols-6 gap-8 my-6 justify-between">
+              <div class="grid grid-cols-[0.5fr_repeat(2,2fr)] md:grid-cols-[0.5fr_repeat(2,1fr)_0.5fr_repeat(2,1fr)] gap-3 my-6">
                 <div
-                  class="flex justify-center items-center px-10 py-2.5 rounded-xl"
+                  class="flex justify-center items-center"
                 >
                   <p
                     class="text-base md:text-lg text-[03071280] font-inter font-medium"
@@ -828,9 +829,9 @@
               Select Your Seat
             </h3>
             <!-- display selected seats and price  -->
-            <div class="bg-[#F7F8F8] p-8 rounded-xl mt-6">
+            <div class="bg-[#F7F8F8] p-4 md:p-8 rounded-xl mt-6">
               <!-- display  -->
-              <div class="p-8 border-b-2 border-solid border-[#03071233]">
+              <div class="pb-8 border-b-2 border-solid border-[#03071233]">
                 <div class="flex justify-between gap-6 border-b-2 border-dashed border-[#03071299] pb-6">
                   <p class="text-[#030712] font-medium text-lg font-inter w-3/4 text-left">
                     Seat <span class="badge bg-[#1DD100] text-white">0</span>
@@ -842,16 +843,10 @@
                     Price
                   </p>
                 </div>
-                <div id="display-selected-seats" class="text-lg text-[#03071299] font-inter font-normal">
-                  <div>
-                    <p>Lorem, ipsum.</p>
-                    <p>Voluptas, quaerat?</p>
-                    <p>Totam, quia!</p>
-                  </div>
-                  </div>
+                <div id="display-selected-seats" class="text-lg text-[#03071299] font-inter font-normal"></div>
                 </div>
                 <!-- total price display block  -->
-                 <div class="flex justify-between font-inter font-medium text-base text-[030712] mt-6">
+                 <div class="flex flex-col md:flex-row justify-between font-inter font-medium text-base text-[030712] mt-6">
                   <div>
                     <p>Total Price</p>
                   </div>
@@ -860,12 +855,20 @@
                   </div>
                  </div>
                  <!-- apply coupon code field block  -->
-                 <div class="join mt-6 w-full p-3 bg-white rounded-xl">
+                  <!-- coupon field-1:start on md  -->
+                 <div class="join hidden md:inline-flex mt-6 w-full p-3 bg-white rounded-xl ">
                   <input type="text" name="" id="" class="input input-bordered join-item w-full font-inter font-normal text-sm text-[#03071266]" placeholder="Have any coupon?">
                   <button class="btn join-item rounded-r-full bg-[#1DD100] text-white text-base font-inter font-semibold">Apply</button>
                 </div>
+
+                <!-- coupon field-2:only for sm  -->
+                 <div class="md:hidden mt-6 p-2.5 w-full bg-white rounded-xl">
+                  <input type="text" placeholder="have any coupon?" class="input input-bordered w-full font-inter font-normal text-sm text-[#03071266]" />
+                  <button class="btn btn-sm mt-3 bg-[#1DD100] text-white text-sm font-inter font-semibold">Apply</button>
+                 </div>
+
                 <!-- Grand price display block  -->
-                 <div class="flex justify-between font-inter font-medium text-base text-[030712] mt-6">
+                 <div class="flex flex-col md:flex-row justify-between font-inter font-medium text-base text-[030712] mt-6">
                   <div>
                     <p>Grand Price</p>
                   </div>
@@ -876,28 +879,28 @@
                 </div>
 
                 <!-- NewsLetter section -->
-                 <form action="" class="mt-6 space-y-6">
+                 <form action="" class="mt-6 space-y-4 md:space-y-6">
                   <!-- name-input-field -->
                   <label for="name-input-field" class="block">
                     <p class="font-inter font-semibold text-[#030712] text-base mb-4">Passenger Name*</p>
-                    <input type="text" name="" id="name-input-field" placeholder="Enter Your Name" class="input input-bordered w-full font-inter font-normal text-base text-[#03071266]" required>
+                    <input type="text" name="" id="name-input-field" placeholder="Enter Your Name" class="input input-bordered w-full font-inter font-normal text-sm md:text-base text-[#03071266]" required>
                   </label>
                   <!-- number-input-field -->
                   <label for="name-input-field" class="block">
                     <p class="font-inter font-semibold text-[#030712] text-base mb-4">Phone Number*</p>
-                    <input type="text" name="" id="number-input-field" placeholder="Enter Your Phone number-input-field" class="input input-bordered w-full font-inter font-normal text-base text-[#03071266]" required>
+                    <input type="text" name="" id="number-input-field" placeholder="Enter Your Phone number-input-field" class="input input-bordered w-full font-inter font-normal text-sm md:text-base text-[#03071266]" required>
                   </label>
                   <!-- email-input-field -->
                   <label for="name-input-field" class="block">
                     <p class="font-inter font-semibold text-[#030712] text-base mb-4">Email ID*</p>
-                    <input type="email" name="" id="name-input-field" placeholder="Enter Your Email ID" class="input input-bordered w-full font-inter font-normal text-base text-[#03071266]" required>
+                    <input type="email" name="" id="name-input-field" placeholder="Enter Your Email ID" class="input input-bordered w-full font-inter font-normal text-sm md:text-base text-[#03071266]" required>
                   </label>
-                  <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full block bg-[#1DD100] hover:bg-green-800 text-white text-xl font-raleway font-extrabold">Next</button>
+                  <button type="submit" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full h-9 md:h-auto block bg-[#1DD100] hover:bg-green-800 text-white text-sm md:text-xl font-raleway font-extrabold">Next</button>
                  </form>
                  <!-- terms and condition block  -->
-                 <div class="flex justify-evenly mt-6">
-                  <div><a href="" class="font-inter font-medium text-base text-[#03071299] underline hover:text-[#030712CC] underline-offset-4">Terms and Conditions</a></div>
-                  <div><a href="" class="font-inter font-medium text-base text-[#03071299] underline hover:text-[#030712CC] underline-offset-4">Cancellation Policy</a></div>
+                 <div class="flex flex-col md:flex-row justify-evenly gap-2.5 mt-6">
+                  <div><a href="" class="font-inter font-medium text-sm md:text-base text-[#03071299] underline hover:text-[#030712CC] underline-offset-4">Terms and Conditions</a></div>
+                  <div><a href="" class="font-inter font-medium text-sm md:text-base text-[#03071299] underline hover:text-[#030712CC] underline-offset-4">Cancellation Policy</a></div>
                  </div>
               </div>
             </div>
