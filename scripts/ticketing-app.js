@@ -2,7 +2,15 @@
 const btnCollection = document.getElementsByClassName("seat-btn");
 // iterate btnCollection
 for (const btn of btnCollection) {
+  // click event on button --> seat
   btn.addEventListener("click", function (event) {
+    // change clicked button(seat)'s the styles
+    event.target.style.backgroundColor = "#1DD100";
+    event.target.style.color = "#ffffff";
+
+    // disabled button(seat) after one click
+    event.target.setAttribute("disabled", true);
+
     // get the seats
     let countOfSeats = getInnerValueAsNumber("seat-indicator");
 
