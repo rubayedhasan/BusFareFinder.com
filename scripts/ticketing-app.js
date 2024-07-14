@@ -23,5 +23,26 @@ for (const btn of btnCollection) {
     selectedSeatCount = selectedSeatCount + 1;
     // update selected seat count
     setInnerValue("selected-seat-indicator", selectedSeatCount);
+
+    // display selected ticket info
+    // create containers
+    const selectedTicketContainer = document.getElementById(
+      "display-selected-seats"
+    );
+    const infoContainer = document.createElement("div");
+    const seatNo = document.createElement("p");
+    const seatClassName = document.createElement("p");
+    const showSeatPrice = document.createElement("p");
+
+    // set values
+    seatNo.innerText = event.target.innerText;
+    seatClassName.innerText = "economic";
+    showSeatPrice.innerText = getInnerValueAsNumber("ticket-price");
+
+    // inset to container and display it
+    infoContainer.appendChild(seatNo);
+    infoContainer.appendChild(seatClassName);
+    infoContainer.appendChild(showSeatPrice);
+    selectedTicketContainer.appendChild(infoContainer);
   });
 }
