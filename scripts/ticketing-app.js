@@ -81,6 +81,8 @@ function discountEventByCoupon() {
     // visible discount price info to customer
     removeClassFromElement("discount-price-container", "hidden");
     addClassToElement("discount-price-container", "flex");
+    // showing percentage of discount
+    setInnerValue("discount-text-indicator", "15%");
 
     // update grand total price
     setInnerValue("grand-price-indicator", price);
@@ -102,7 +104,8 @@ function discountEventByCoupon() {
     // visible discount price info to customer
     removeClassFromElement("discount-price-container", "hidden");
     addClassToElement("discount-price-container", "flex");
-
+    // showing percentage of discount
+    setInnerValue("discount-text-indicator", "20%");
     // update grand total price
     setInnerValue("grand-price-indicator", price);
 
