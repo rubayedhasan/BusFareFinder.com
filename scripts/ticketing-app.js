@@ -1,9 +1,33 @@
+// creating an empty array
+const countSelectedSeats = [];
 // collection of bus btn
 const btnCollection = document.getElementsByClassName("seat-btn");
 // iterate btnCollection
 for (const btn of btnCollection) {
   // click event on button --> seat
   btn.addEventListener("click", function (event) {
+    // pushing target (clicked button) into an empty array
+    countSelectedSeats.push(event.target);
+
+    // condition for enable next or complete purchase button
+    if (countSelectedSeats.length >= 1) {
+      removeAttributeFromElement("next-btn");
+    }
+
+    // condition for enable coupon input field for who has buy 4 tickets
+    if (countSelectedSeats.length === 4) {
+      removeAttributeFromElement("coupon-input-field");
+      removeAttributeFromElement("apply-btn-1");
+      removeAttributeFromElement("coupon-input-2nd-field");
+      removeAttributeFromElement("apply-btn-2");
+    }
+
+    // condition for do not allow customer to buy more than 4 tickets
+    if (countSelectedSeats.length > 4) {
+      alert("You can buy only 4 tickets");
+      return;
+    }
+
     // change clicked button(seat)'s the styles
     event.target.style.backgroundColor = "#1DD100";
     event.target.style.color = "#ffffff";

@@ -29,7 +29,9 @@ function removeClassFromElement(elementID, removeClassName) {
   const element = document.getElementById(elementID);
   element.classList.remove(removeClassName);
 }
-function visibleElementByReplacingClassName(elementID) {
+
+// remove attribute from element
+function removeAttributeFromElement(elementID) {
   const element = document.getElementById(elementID);
-  element.classList.replace("hidden", "flex");
+  element.removeAttribute("disabled");
 }
