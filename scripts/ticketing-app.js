@@ -61,28 +61,60 @@ function calculatePrices() {
 
 // calculated discount using coupon
 function discountEventByCoupon() {
+  // the input field
   const couponInputField = document.getElementById("coupon-input-field");
   const couponInput2ndField = document.getElementById("coupon-input-2nd-field");
 
+  // get the value from the input firld
   const couponCode1 = couponInputField.value;
   const couponCode2 = couponInput2ndField.value;
+
+  // condition base on different coupon code
   if (couponCode1 === "NEW15" || couponCode2 === "NEW15") {
+    // calculate granted price after getting discount
     const totalPrice = getInnerValueAsNumber("total-price-indicator");
     const discount = totalPrice * 0.15;
     const price = totalPrice - discount;
+
+    //update discount price
     setInnerValue("discount-price-indicator", discount);
-    visibleElementByReplacingClassName("discount-price-container");
+    // visible discount price info to customer
+    removeClassFromElement("discount-price-container", "hidden");
+    addClassToElement("discount-price-container", "flex");
+
+    // update grand total price
     setInnerValue("grand-price-indicator", price);
+
+    // hide the coupon input field after using coupon
+    // for coupon-field-container-1
+    removeClassFromElement("coupon-container-1", "md:inline-flex");
+    // for coupon-field-container-2
+    removeClassFromElement("coupon-container-2", "md:hidden");
+    addClassToElement("coupon-container-2", "hidden");
   } else if (couponCode1 === "Couple 20" || couponCode2 === "Couple 20") {
+    // calculate granted price after getting discount
     const totalPrice = getInnerValueAsNumber("total-price-indicator");
     const discount = totalPrice * 0.2;
     const price = totalPrice - discount;
+
+    //update discount price
     setInnerValue("discount-price-indicator", discount);
-    visibleElementByReplacingClassName("discount-price-container");
+    // visible discount price info to customer
+    removeClassFromElement("discount-price-container", "hidden");
+    addClassToElement("discount-price-container", "flex");
+
+    // update grand total price
     setInnerValue("grand-price-indicator", price);
-    setInnerValue("grand-price-indicator", price);
+
+    // hide the coupon input field after using coupon
+    // for coupon-field-container-1
+    removeClassFromElement("coupon-container-1", "md:inline-flex");
+    // for coupon-field-container-2
+    removeClassFromElement("coupon-container-2", "md:hidden");
+    addClassToElement("coupon-container-2", "hidden");
   } else {
-    alert("Enter right coupon code.");
+    // wrong coupon customer alert
+    alert("Wrong coupon. Enter right coupon code.");
     return;
   }
 }
