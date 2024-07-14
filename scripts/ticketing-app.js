@@ -44,5 +44,16 @@ for (const btn of btnCollection) {
     infoContainer.appendChild(seatClassName);
     infoContainer.appendChild(showSeatPrice);
     selectedTicketContainer.appendChild(infoContainer);
+
+    // calculated total price
+    calTotalPrice();
   });
+}
+
+// calculating total price
+function calTotalPrice() {
+  const initialTotalPrice = getInnerValueAsNumber("total-price-indicator");
+  const perSeatCost = getInnerValueAsNumber("ticket-price");
+  const totalPrice = initialTotalPrice + perSeatCost;
+  setInnerValue("total-price-indicator", totalPrice);
 }
