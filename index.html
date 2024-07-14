@@ -856,17 +856,26 @@
                     <p>BDT <span id="total-price-indicator">0</span></p>
                   </div>
                  </div>
+                 <!-- discount price  -->
+                 <div id="discount-price-container" class="hidden flex-col md:flex-row justify-between font-inter font-medium text-base text-[030712] mt-6">
+                  <div>
+                    <p>Discount Price</p>
+                  </div>
+                  <div>
+                    <p>BDT <span id="discount-price-indicator">0</span></p>
+                  </div>
+                 </div>
                  <!-- apply coupon code field block  -->
                   <!-- coupon field-1:start on md  -->
                  <div class="join hidden md:inline-flex mt-6 w-full p-3 bg-white rounded-xl ">
-                  <input type="text" name="" id="" class="input input-bordered join-item w-full font-inter font-normal text-sm text-[#03071266]" placeholder="Have any coupon?">
-                  <button class="btn join-item rounded-r-full bg-[#1DD100] text-white text-base font-inter font-semibold">Apply</button>
+                  <input type="text" name="" id="coupon-input-field" class="input input-bordered join-item w-full font-inter font-normal text-sm text-[#03071266]" placeholder="Have any coupon?">
+                  <button onclick="discountEventByCoupon()" class="btn join-item rounded-r-full bg-[#1DD100] text-white text-base font-inter font-semibold">Apply</button>
                 </div>
 
                 <!-- coupon field-2:only for sm  -->
                  <div class="md:hidden mt-6 p-2.5 w-full bg-white rounded-xl">
-                  <input type="text" placeholder="have any coupon?" class="input input-bordered w-full font-inter font-normal text-sm text-[#03071266]" />
-                  <button class="btn btn-sm mt-3 bg-[#1DD100] text-white text-sm font-inter font-semibold">Apply</button>
+                  <input type="text" placeholder="have any coupon?" id="coupon-input-2nd-field" class="input input-bordered w-full font-inter font-normal text-sm text-[#03071266]" />
+                  <button onclick="discountEventByCoupon()" class="btn btn-sm mt-3 bg-[#1DD100] text-white text-sm font-inter font-semibold">Apply</button>
                  </div>
 
                 <!-- Grand price display block  -->
@@ -875,7 +884,7 @@
                     <p>Grand Price</p>
                   </div>
                   <div>
-                    <p>BDT <span>0</span></p>
+                    <p>BDT <span id="grand-price-indicator">0</span></p>
                   </div>
                  </div>
                 </div>

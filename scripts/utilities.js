@@ -17,3 +17,9 @@ function setInnerValue(elementID, setValue) {
   const element = document.getElementById(elementID);
   element.innerText = setValue;
 }
+
+// replace class name
+function visibleElementByReplacingClassName(elementID) {
+  const element = document.getElementById(elementID);
+  element.classList.replace("hidden", "flex");
+}
