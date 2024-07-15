@@ -9,10 +9,24 @@ for (const btn of btnCollection) {
     // pushing target (clicked button) into an empty array
     countSelectedSeats.push(event.target);
 
-    // condition for enable next or complete purchase button
-    if (countSelectedSeats.length >= 1) {
-      removeAttributeFromElement("next-btn");
-    }
+    // get the phone number input field
+    const phoneNumberContainer = document.getElementById("number-input-field");
+    // event for every change on input field(phone number)
+    phoneNumberContainer.addEventListener("input", function () {
+      // to access input field value
+      const phoneNumber = phoneNumberContainer.value.trim();
+
+      // condition for enable next or complete purchase button
+      if (
+        countSelectedSeats.length >= 1 &&
+        phoneNumber !== "" &&
+        phoneNumber.length === 11 &&
+        phoneNumber[0] === "0" &&
+        phoneNumber[1] === "1"
+      ) {
+        removeAttributeFromElement("next-btn");
+      }
+    });
 
     // condition for enable coupon input field for who has buy 4 tickets
     if (countSelectedSeats.length === 4) {
