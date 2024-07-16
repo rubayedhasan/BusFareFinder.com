@@ -167,8 +167,3 @@ function discountEventByCoupon() {
     return;
   }
 }
-
-// open modal
-function openModal() {
-  document.getElementById(modal).showModal();
-}
